@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UP Music</title>
+        <link rel="shortcut icon" href="assets/logo.svg">
+        <link rel="stylesheet" href="scrollstyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jhinstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        </script>
+    </head>
+    <body>                                            
+        <div class="topnav">
+            <div class="logo">
+                <div id="logo-grayout" class="grayout" onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+                <img id="logo-img" src="assets/logo.svg" /*onclick="this.classList.toggle('active');"*/>
+                <div class="container cut">
+                    <div class="drop cut2"></div>
+                  </div>
+                <div id="logo-list" class="list">
+                    <ul>
+                        <li id="list-home">
+                            HOME
+                        </li>
+                        <li id="list-about">
+                            ABOUT
+                        </li>
+                        <li id="list-artists">
+                            JHIN
+                        </li>
+                        <li id="list-team">
+                            TEAM
+                        </li>
+                        <li id="list-discography">
+                            DISCOGRAPHY
+                        </li>
+                        <li id="list-shop">
+                            SHOP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cursor"
+         onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+        </div>
+        <div class="page">
+            <div id="jhin-left">
+                <div id="photo-panel">
+                    <img id="jhin-1" src="assets/img2.png" />
+                    <img id="jhin-2" src="assets/img3.png" />
+                    <img id="jhin-3" src="assets/img4.png" />
+                    <img id="jhin-4" src="assets/img5.png" />                    
+                </div>
+                <script src="jhinimages.js"></script>
+                <div id="music-panel">
+                    <h3>Music</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="song-list">
+                        <img id="tutor" src="assets/albums/youwould.png" />
+                        <h4>Single - You Would<br>2022/11</h4>
+                    </div>
+                    <div class="song-list">
+                        <img id="tutor" src="assets/albums/tutor.jpg" />
+                        <h4>Single - Crush on my Tutor<br>2022/05</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="jhin-right">
+                <h1>JHIN</h1>
+                <div id="jhin-info">
+                    <h3>Singer/Songwriter</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <h4>
+                    Born in Chicago in 2001, Jhin grew up with his mother and younger sister. He found himself surrounded by his mother's love for emotional Korean ballads. And he was also heavily influenced by his hometown’s emo music wave. His whole life, he only played the part of being a consumer of music. Never being given a chance due to his parental expectations of going to law school, Jhin reluctantly ceased all opportunities that came his way. 
+                    <br>
+                    <br>
+                    During his time at New York University, he would try to involve himself into different fields of study, but failed to find enjoyment and purpose in doing so. While his friends were out partying, he found himself in alienation, as he sat on the edge of his bed in his apartment, looking into the city skyline, and contemplated deeply on what he wanted to do with his life. 
+                    <br>
+                    <br>
+                    The very next day, he packed his bags and moved to Seoul, South Korea, where he connected with his mentor, 220. With no musical background, Jhin honed and procured his sound with the help of his mentor. Meshing his musical influences and his life-experiences, Jhin is able to create relatable and playful melodies.
+                    </h4>
+                </div>
+                <iframe id="jhin-player" src="https://www.youtube.com/embed/mXJ7ErRbVpk?controls=0" title="JHIN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script src='menu.js'></script>
+    </body>        
+</html>

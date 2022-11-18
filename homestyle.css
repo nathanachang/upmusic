@@ -1,0 +1,31 @@
+#home img 
+{
+    position: absolute;
+    top: 82.5%;
+    left: 46.5%;    
+    width: 5vw;
+    z-index: 2;
+}
+
+#home video
+{
+    filter: brightness(20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#bg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000 url(assets/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;   
+    mix-blend-mode: screen;
+}

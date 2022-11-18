@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Cloudsters';
+    src: url('assets/fonts/cloudsters-cloudsters-400.otf') format('opentype');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #f2e82e;
+    text-decoration: none;
+    padding:1rem 1rem;
+}
+
+a:visited {
+    color: #f2e82e;
+    text-decoration: none;
+    padding:1rem 1rem;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.shown {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;   
+    background-color: rgb(27, 27, 27);
+}
+
+section button {
+    position: relative;
+    z-index: 1;
+    width: 12vw;
+    
+    left: 44vw;
+    top: 47.5vh;
+    align-self:center;
+    align-content: center;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    margin-bottom: 5vh;
+    font-family: "Cloudsters";
+    letter-spacing:1px;    
+    font-size: 2.2vw;
+    font-weight: light;
+    color:#f2e82e;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+section button:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar 
+{
+    display: none;
+}
+
+/* jhin styles */
+.imgbox {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;  
+    transition: opacity 1s; 
+    background-color: #000;
+    z-index: 0;
+}
+
+.imgbox img {
+    position: absolute;
+    top: -100px;
+    height: 100vh;
+    width: calc(100vh * 0.683);
+    display: flex;
+    filter: brightness(50%);
+    opacity: 50%;    
+}
+
+#img1 { left: 0; transition: all .75s cubic-bezier(0.4, 0.0, 0.2, 1); }
+#img2 { left: calc(100vh * 0.683); transition: all .75s cubic-bezier(0.4, 0.0, 0.2, 1); }
+#img3 { left: 100%; transition: all .75s cubic-bezier(0.4, 0.0, 0.2, 1); }
+#img4 { left: 100%; transition: all .75s cubic-bezier(0.4, 0.0, 0.2, 1); }
+#img5 { left: calc(100vh * 0.683 * 2); transition: all .75s cubic-bezier(0.4, 0.0, 0.2, 1); }
+
+#jhin:hover ~ .imgbox #img1 { left: -5vw; }
+#jhin:hover ~ .imgbox #img2 { left: 15vw; }
+#jhin:hover ~ .imgbox #img3 { left: 35vw; }
+#jhin:hover ~ .imgbox #img4 { left: 55vw; }
+#jhin:hover ~ .imgbox #img5 { left: 75vw; }

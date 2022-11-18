@@ -1,0 +1,97 @@
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 15vh;
+    min-height: 100vh;
+}
+
+* {
+    font-family: "Raleway";
+    color: white;    
+    font-weight: lighter;
+}
+
+hr {
+    border: 2px solid #f2e82e;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 8vh;
+    font-family: "Cloudsters";
+}
+
+h3 {
+    font-family: "Cloudsters";
+    font-size: 4vh;
+}
+
+h4 {
+    font-size: 2.25vh;
+    font-weight: lighter;
+}
+
+#jhin-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;    
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#jhin-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#jhin-info {
+    margin-bottom: 13.75vh;
+}
+
+#jhin-player {
+    width: 50vw;
+    height: 28.125vw;
+    margin-bottom: 10vh;
+}
+
+#photo-panel {
+    position: relative;
+    min-height: 65vh;
+    
+}
+
+#photo-panel img {
+    width: 80%;
+    transition: opacity 0.5s;
+}
+
+#jhin-1 { position: absolute; top: 0%; left: 0%; z-index: 4; }
+#jhin-2 { position: absolute; top: 2%; left: 4%; z-index: 3; }
+#jhin-3 { position: absolute; top: 4%; left: 8%; z-index: 2; }
+#jhin-4 { position: absolute; top: 6%; left: 12%; z-index: 1; }
+
+#music-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vh;
+}
+
+.song-list img {
+    width: 7vw;
+}
+
+.song-list h4 {
+    font-size: 2vh;
+    margin-left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}

@@ -1,0 +1,478 @@
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+.topnav
+{
+    position:fixed;
+    z-index: 5;
+    top: -5px;
+    left: -5px;
+    width: 110%;
+    height: 60px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.grayout
+{
+    z-index: -1;
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    transition: all 200ms ease-in;
+}
+
+.logo.active .grayout
+{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 200ms ease-in;
+    opacity: 0.2;
+}
+
+@keyframes grayOut {
+    from { opacity: 0;}
+    to   { opacity: 0.2;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes grayOut {
+    from { opacity: 0;}
+    to   { opacity: 0.2;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes grayOut {
+    from { opacity: 0;}
+    to   { opacity: 0.2;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes grayOut {
+    from { opacity: 0;}
+    to   { opacity: 0.2;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes grayOut {
+    from { opacity: 0;}
+    to   { opacity: 0.2;}
+}
+
+.logo
+{
+    position: fixed;
+    left: 15px;
+    top: 5px;
+    z-index: 2;
+}
+
+.cut {
+    z-index: 5;
+}
+.cut2 {
+    z-index: 5;
+}
+
+#logo-img
+{
+    position: none;
+    width: 50px;
+}
+
+.list {
+    left:100px;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 50px;
+    width: 280px;
+    z-index: 6;
+    pointer-events: none;
+}
+.active .list{
+  pointer-events: auto;
+}
+.list ul {
+    list-style-position: inside;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+  .list li {
+    /* font-family: "Tahoma"; */
+    font-family: "Raleway";
+    /* background-color: rgba(211, 211, 211, 0.1); */
+    /* padding-left: 10px; */
+    padding-right: 300px;
+    text-align: center;
+    align-items: center;
+    color: #a9a9a9;
+    border-bottom: 1px solid #f2e82e;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    margin-left: 40px;
+    opacity: 0;
+    list-style: inside;
+    user-select: none;
+    -moz-user-select: none;
+    padding: 20px;
+  }
+  .list li:nth-child(1)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.18s;
+  }
+  .list li:nth-child(2)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.15s;
+  }
+  .list li:nth-child(3)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.12s;
+  }
+  .list li:nth-child(4)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.09s;
+  }
+  .list li:nth-child(5)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.06s;
+  }
+  .list li:nth-child(6)
+  {
+    transition: opacity 100ms cubic-bezier(0.4, 0.0, 0.2, 1) 0.03s;
+  }
+  .list li:hover{
+    padding-left: 30px;
+    transition: all 0.3s ease;
+    color: #f2e82e;;
+    background: #111;
+  }
+.logo .container{
+    display: flex;
+    height: 9000px;
+    justify-content: left;
+    top: 50px;
+    left: -50%;
+    overflow: hidden;
+    position: absolute;
+    width: 325px;
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);;
+}
+.logo .drop{
+    background: rgb(0, 0, 0);
+    border-radius: 1.2px;
+    transition: all 300ms 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    height: 500px;
+    width: 0px;
+}
+  .logo.active .container {
+    display: flex;
+    height: 9000px;
+    justify-content: left;
+    top: 50px;
+    left: -50%;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);;
+    width: 325px;
+  }
+  .logo.active .drop {
+    background: rgb(0, 0, 0);
+    border-radius: 1.2px;
+    transform: translateY(212px) scale(108);
+    transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    height: 500px;
+    width: 5px;
+  }
+  .logo.active .list li {
+    cursor: pointer;
+    opacity: 1;
+  }
+  .logo.active .list li:nth-child(1) {
+    transition: opacity 200ms 0.23s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+  .logo.active .list li:nth-child(2) {
+    transition: opacity 200ms 0.26s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+  .logo.active .list li:nth-child(3) {
+    transition: opacity 200ms 0.29s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+  .logo.active .list li:nth-child(4) {
+    transition: opacity 200ms 0.32s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+  .logo.active .list li:nth-child(5) {
+    transition: opacity 200ms 0.35s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+  .logo.active .list li:nth-child(6) {
+    transition: opacity 200ms 0.38s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s, padding-left 0.2s;
+  }
+
+.cursor {
+    z-index: 20;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    left: 15px;
+    top: 5px;
+    width: 50px;
+}
+
+.logo-cursor {
+    cursor: pointer;
+}
+
+#icon-list
+{
+    position: fixed;
+    top: 35%;
+    left: 95%;    
+    height: 200px;
+    z-index: 3;
+}
+
+#icon
+{
+    position: relative;
+    top: 0%;
+    align-self: right;
+    width: 35px;
+    transition: transform 0.2s, top 0.2s;
+}
+
+#icon-holder
+{
+    position: flex;
+    height: auto;
+}
+
+.icon-text-holder
+{
+    position: relative;
+    top: -30px;
+    left: -60px;
+    width: 0;
+    height: 0;
+}
+
+#icon-holder > .icon-text-holder > p
+{
+    position: absolute;
+    font-family: "Raleway";
+    height: 0px;
+    top: 0;
+    right: -40px;
+    text-align: right;
+    z-index: 20;
+    color: #aca406;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; right: -60px;}
+    to   { opacity: 1; right: -40px;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; right: -60px;}
+    to   { opacity: 1; right: -40px;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; right: -60px;}
+    to   { opacity: 1; right: -40px;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; right: -60px;}
+    to   { opacity: 1; right: -40px;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; right: -60px;}
+    to   { opacity: 1; right: -40px;}
+}
+
+.icon-text
+{
+    opacity: 100%;
+}
+
+.enlarge
+{
+    transform: scale(1.5);
+}
+.shrink
+{
+    transform: scale(0.5);
+}
+
+#team button {
+    width: auto;
+    left: 41vw;
+}
+
+#shop button {
+    width: auto;
+    left: 41vw;
+}
+
+#discography
+{
+    margin-left: -8px;
+    background-color: rgb(27, 27, 27);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#discography button
+{
+    z-index: 50;
+    left: -0.5vw;
+    top: 4vh;
+    width: auto;
+}
+
+#discography
+{
+  margin-left: -8px;
+  background-color: rgb(27, 27, 27);
+}
+
+.album-cover
+{
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  opacity: 0;
+}
+
+.album-cover-equator
+{
+  height: 5vw;
+  width: 5vw;
+  position: absolute;
+  opacity: 0;
+}
+
+.album-cover-top
+{
+  position: absolute;
+  height: 180px;
+  /* height: 100%; */
+  width: 180px;
+  z-index: 5;
+  clip: rect(90px, 180px, 180px, 0px);
+  opacity: 0;
+}
+
+.active-section .album-cover
+{
+  opacity: 1;
+  left: 0px;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.active-section .album-cover-top
+{
+  clip: rect(90px, 180px, 180px, 0px);
+  opacity: 1;
+  left: 0px;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.active-section .album-cover-equator
+{
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.active-section .album-cover.disco-hover-left
+{
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  left: -50px;
+  transform: scale(1.05);
+}
+
+.active-section .album-cover.disco-hover-right
+{
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  left: 50px;
+  transform: scale(1.05);
+}
+
+@keyframes disco-hover-left {
+  from { left: 0px; transform: scale(1);}
+  to   { left: -50px; transform: scale(1.05);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes disco-hover-left {
+  from { left: 0px; transform: scale(1);}
+  to   { left: -50px; transform: scale(1.05);}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes disco-hover-left {
+  from { left: 0px; transform: scale(1);}
+  to   { left: -50px; transform: scale(1.05);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes disco-hover-left {
+  from { left: 0px; transform: scale(1);}
+  to   { left: -50px; transform: scale(1.05);}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes disco-hover-left {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}
+
+@keyframes disco-hover-right {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes disco-hover-right {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes disco-hover-right {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes disco-hover-right {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes disco-hover-right {
+  from { left: 0px; transform: scale(1);}
+  to   { left: 50px; transform: scale(1.05);}
+}

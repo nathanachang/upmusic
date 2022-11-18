@@ -1,0 +1,55 @@
+.about-background{
+    position: absolute;
+    opacity: 10%;
+    top:15%;
+    left:15%;
+    width: 70%;
+    height: 70%;
+}
+
+.about-heading{
+    font-size: 7.5vh;
+    color:white;
+    font-family: "Cloudsters";
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 0%;
+}
+
+.about-body{
+    font-size: 2.5vh;
+    position: relative;
+    color:rgb(173, 173, 173);
+    text-align: center;
+    position: relative;
+    top: 45%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Raleway";
+}
+
+.about-hover {
+    position: relative;
+    z-index: 10;
+    width: auto;
+    top: 40%;
+    align-self:center;
+    background:transparent;
+    font-family: "Raleway";
+    letter-spacing:1px;    
+    font-size: 4.5vh;
+    font-weight: 500;
+    color: white;
+    border: 0px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+    border-bottom: 5px solid #b8b129;
+}
+
+.about-hover:hover
+{
+  transform: scale(1.2);
+  font-weight: 600;
+  cursor: default;
+}

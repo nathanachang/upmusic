@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UP Music</title>
+        <link rel="shortcut icon" href="assets/logo.svg">
+        <link rel="stylesheet" href="scrollstyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="homestyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>                                            
+        <div class="topnav">
+            <div class="logo">
+                <div id="logo-grayout" class="grayout" onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+                <img id="logo-img" src="assets/logo.svg" /*onclick="this.classList.toggle('active');"*/>
+                <div class="container cut">
+                    <div class="drop cut2"></div>
+                  </div>
+                <div id="logo-list" class="list">
+                    <ul>
+                        <li id="list-home">
+                            HOME
+                        </li>
+                        <li  id="list-about">
+                            ABOUT
+                        </li>
+                        <li  id="list-artists">
+                            JHIN
+                        </li>
+                        <li  id="list-team">
+                            TEAM
+                        </li>
+                        <li  id="list-discography">
+                            DISCOGRAPHY
+                        </li>
+                        <li  id="list-shop">
+                            SHOP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cursor"
+         onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+        </div>
+        <section id="home">
+            <video autoplay="" muted="" loop="">
+                <source src="assets/bg.mp4" type="video/mp4">
+            </video>
+            <div id="bg"></div> 
+            <img id="arrow" src="assets/arrow.gif">
+        </section>
+        <section id="about">
+            <!-- <button>about</button> -->
+        </section>
+        <section id="artists">
+            <button id="jhin"><a href='jhin.html'>JHIN</a></button>
+            <div class="imgbox">
+                <img id="img1" src="assets/img1.png" />
+                <img id="img2" src="assets/img2.png" />
+                <img id="img3" src="assets/img4.png" />
+                <img id="img4" src="assets/img5.png" />
+                <img id="img5" src="assets/img3.png" />
+            </div>          
+        </section>
+        <section id="team">
+            <button> coming soon. </button>
+        </section>
+        <section id="discography">
+            <button id="discography-button"><a href='discography.html'>DISCOGRAPHY</a></button>
+        </section>
+        <section id="shop">
+            <button> coming soon. </button>
+        </section>
+
+        <div id="icon-list">
+            <div id="icon-holder">
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/About.svg">
+                </a>
+            </div>
+            <div id="icon-holder">
+                <!-- <img id="icon" src="icon.png"> -->
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/About.svg">
+                </a>
+            </div>
+            <div id="icon-holder">
+                <!-- <img id="icon" src="icon.png"> -->
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/Artist.svg">
+                </a>
+            </div>
+            <div id="icon-holder">
+                <!-- <img id="icon" src="icon.png"> -->
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/Team.svg">
+                </a>
+            </div>
+            <div id="icon-holder">
+                <!-- <img id="icon" src="icon.png"> -->
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/Discography.svg">
+                </a>
+            </div>
+            <div id="icon-holder">
+                <!-- <img id="icon" src="icon.png"> -->
+                <a class="logo-cursor">
+                    <img id="icon" src="assets/icons/Shop.svg">
+                </a>
+            </div>
+        </div>
+ 
+        <script src="about-page.js"></script>
+        <script src="sectioned-scrolling.js"></script>
+        <script src="clickable-icons.js"></script>
+        <script src="disco-hover.js"></script>
+    </body>        
+</html>
