@@ -132,4 +132,4 @@ discography.children[0].addEventListener("mouseout", function(event){
     }
     // clearInterval(discoMove);
     // vw / vh
-})
+});

@@ -26,6 +26,6 @@
     background: #000 url(assets/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 250px;   
+    background-size: 35vh;   
     mix-blend-mode: screen;
 }

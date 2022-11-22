@@ -30,8 +30,10 @@ for(let i = 0; i < logoList.children.length; i++){
 // making the icons clickable
 function makeIconsClickable(val, ind){
     val.addEventListener('click', function() {
-        index = ind + 1;
-        window.scrollTo({ top: ind * sections[ind].clientHeight });
+        index = ind;
+        $("html, body").animate({
+           scrollTop: $(sectionTitles[ind]).offset().top 
+        }, 600);
         old = ind * sections[ind].clientHeight;
         scrollFlag = true;
     });
@@ -40,8 +42,10 @@ function makeIconsClickable(val, ind){
 // making the logo list clickable
 function makeLogoListClickable(val, ind){
     val.addEventListener('click', function() {
-        index = ind + 1;
-        window.scrollTo({ top: ind * sections[ind].clientHeight });
+        index = ind;
+        $("html, body").animate({
+           scrollTop: $(sectionTitles[ind]).offset().top 
+        }, 600);
         old = ind * sections[ind].clientHeight;
         scrollFlag = true;
         document.querySelector('.logo').classList.toggle('active');

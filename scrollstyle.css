@@ -341,6 +341,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 #discography button
@@ -362,7 +363,9 @@ body {
   position: absolute;
   height: 10vw;
   width: 10vw;
-  opacity: 0;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  left: 0px;
 }
 
 .album-cover-equator
@@ -370,20 +373,11 @@ body {
   height: 5vw;
   width: 5vw;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.album-cover-top
-{
-  position: absolute;
-  height: 180px;
-  /* height: 100%; */
-  width: 180px;
-  z-index: 5;
-  clip: rect(90px, 180px, 180px, 0px);
-  opacity: 0;
-}
-
+/*
 .active-section .album-cover
 {
   opacity: 1;
@@ -404,15 +398,15 @@ body {
   opacity: 1;
   transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-
-.active-section .album-cover.disco-hover-left
+*/
+.album-cover.disco-hover-left
 {
   transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
   left: -50px;
   transform: scale(1.05);
 }
 
-.active-section .album-cover.disco-hover-right
+.album-cover.disco-hover-right
 {
   transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
   left: 50px;
