@@ -38,7 +38,7 @@ let bg = document.querySelector("#bg");
 
 window.addEventListener('scroll', function() {    
     let val = window.scrollY;
-    bg.style.backgroundSize = (windowHeight * 0.35) - (val*0.5) + 'px';
+    bg.style.backgroundSize = (windowHeight * 0.25) - (val*0.5) + 'px';
     for (let i = 0; i < sectionHeads.length; i++) {
         if (i != sectionHeads.length-1) {
             if (val >= sectionHeads[i]-windowHeight/3 && val <= sectionHeads[i+1]) {

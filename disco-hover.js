@@ -12,6 +12,7 @@ let layer4 = [];
 let layer5 = [];
 
 // add photos to discography section
+/*
 for(let i = 0; i < 9; i++){
     const albumCover = document.createElement("img");
     albumCover.src = albumCovers[(i) % albumCovers.length];
@@ -21,6 +22,7 @@ for(let i = 0; i < 9; i++){
     discography.appendChild(albumCover);
     layer1.push(albumCover);
 }
+*/
 for(let i = 0; i < 9; i++){
     const albumCover = document.createElement("img");
     albumCover.src = albumCovers[(i + (albumCovers.length) / 2) % albumCovers.length];
@@ -39,6 +41,7 @@ for(let i = 0; i < 9; i++){
     discography.appendChild(albumCover);
     layer3.push(albumCover);
 }
+/*
 for(let i = 0; i < 9; i++){
     const albumCover = document.createElement("img");
     albumCover.src = albumCovers[(i) % albumCovers.length];
@@ -48,6 +51,7 @@ for(let i = 0; i < 9; i++){
     discography.appendChild(albumCover);
     layer4.push(albumCover);
 }
+*/
 for(let i = 0; i < 5; i++){
     const albumCover = document.createElement("img");
     albumCover.src = albumCovers[(i + 7) % albumCovers.length];
@@ -70,10 +74,10 @@ for(let i = 0; i < 5; i++){
 let zoom = (( window.outerWidth - 10 ) / window.innerWidth) * 100;
 
 for(let i = 0; i < 9; i++){
-    layer1[i].style.transform = "scale(" + (100 / zoom) + ")";
+    //layer1[i].style.transform = "scale(" + (100 / zoom) + ")";
     layer2[i].style.transform = "scale(" + (100 / zoom) + ")";
     layer3[i].style.transform = "scale(" + (100 / zoom) + ")";
-    layer4[i].style.transform = "scale(" + (100 / zoom) + ")";
+    //layer4[i].style.transform = "scale(" + (100 / zoom) + ")";
 }
 for(let i = 0; i < 10; i++){
     layer5[i].style.transform = "scale(" + (100 / zoom) + ")";
@@ -83,10 +87,10 @@ window.onresize = resize;
 function resize() {
     zoom = (( window.outerWidth - 10 ) / window.innerWidth) * 100;
     for(let i = 0; i < 9; i++){
-        layer1[i].style.transform = "scale(" + (100 / zoom) + ")";
+        //layer1[i].style.transform = "scale(" + (100 / zoom) + ")";
         layer2[i].style.transform = "scale(" + (100 / zoom) + ")";
         layer3[i].style.transform = "scale(" + (100 / zoom) + ")";
-        layer4[i].style.transform = "scale(" + (100 / zoom) + ")";
+        //layer4[i].style.transform = "scale(" + (100 / zoom) + ")";
     }
     for(let i = 0; i < 10; i++){
         layer5[i].style.transform = "scale(" + (100 / zoom) + ")";
@@ -105,7 +109,7 @@ const isInViewPort = function (element){
 // let discoMove;
 discography.children[0].addEventListener("mouseover", function(event){
     for(let i = 0; i < layer1.length; i++){
-        layer1[i].classList.add('disco-hover-right');
+        //layer1[i].classList.add('disco-hover-right');
     }
     for(let i = 0; i < layer2.length; i++){
         layer2[i].classList.add('disco-hover-left');
@@ -114,12 +118,12 @@ discography.children[0].addEventListener("mouseover", function(event){
         layer3[i].classList.add('disco-hover-right');
     }
     for(let i = 0; i < layer4.length; i++){
-        layer4[i].classList.add('disco-hover-left');
+        //layer4[i].classList.add('disco-hover-left');
     }
 });
 discography.children[0].addEventListener("mouseout", function(event){
     for(let i = 0; i < layer1.length; i++){
-        layer1[i].classList.remove('disco-hover-right');
+        //layer1[i].classList.remove('disco-hover-right');
     }
     for(let i = 0; i < layer2.length; i++){
         layer2[i].classList.remove('disco-hover-left');
@@ -128,7 +132,7 @@ discography.children[0].addEventListener("mouseout", function(event){
         layer3[i].classList.remove('disco-hover-right');
     }
     for(let i = 0; i < layer4.length; i++){
-        layer4[i].classList.remove('disco-hover-left');
+        //layer4[i].classList.remove('disco-hover-left');
     }
     // clearInterval(discoMove);
     // vw / vh

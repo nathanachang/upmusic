@@ -7,6 +7,7 @@ shop = document.querySelector("#shop");
 iconList = document.querySelector('#icon-list');
 
 sections = [home, about, artists, team, discography, shop];
+pages = ["index.html", "index.html", "jhin.html", "team.html", "discography.html", "index.html"]
 let logoList = document.querySelector('#logo-list').children[0];
 let iconTexts = ['HOME', 'ABOUT', 'JHIN', 'TEAM', 'DISCOGRAPHY', 'SHOP'];
 
@@ -41,6 +42,7 @@ function makeIconsClickable(val, ind){
 
 // making the logo list clickable
 function makeLogoListClickable(val, ind){
+    /*
     val.addEventListener('click', function() {
         index = ind;
         $("html, body").animate({
@@ -49,6 +51,11 @@ function makeLogoListClickable(val, ind){
         old = ind * sections[ind].clientHeight;
         scrollFlag = true;
         document.querySelector('.logo').classList.toggle('active');
+    });
+    */
+    val.addEventListener('click', function() {
+        index = ind;
+        window.location.href = pages[ind];
     });
 }
 iconButons.forEach(makeIconsClickable);

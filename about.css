@@ -1,55 +1,89 @@
-.about-background{
-    position: absolute;
-    opacity: 10%;
-    top:15%;
-    left:15%;
-    width: 70%;
-    height: 70%;
+#about {
+    display: flex;
+    flex-direction: row;
 }
 
-.about-heading{
-    font-size: 7.5vh;
-    color:white;
-    font-family: "Cloudsters";
-    text-align: center;
-    position: relative;
-    margin: auto;
-    top: 0%;
+.about-heading:hover {
+    cursor: default;
 }
 
-.about-body{
-    font-size: 2.5vh;
+.about-body {
+    font-size: 1.25vw;
     position: relative;
     color:rgb(173, 173, 173);
     text-align: center;
     position: relative;
-    top: 45%;
-    width: 50%;
+    top: 20vh;
+    width: 80%;    
     margin-left: auto;
     margin-right: auto;
     font-family: "Raleway";
+    transition: all 0.4s;
+}
+
+.about-heading {
+    font-size: 1.25vw;
+    color: white;
+    font-family: "Raleway";
+    left: 28.5vw;
+    top: 85vh;
+    border: 0px;
+    position: absolute;
+    width: auto;
+    text-align: center;
 }
 
 .about-hover {
     position: relative;
     z-index: 10;
+    padding: 3vw;
     width: auto;
-    top: 40%;
+    top: 35vh;
     align-self:center;
     background:transparent;
     font-family: "Raleway";
     letter-spacing:1px;    
-    font-size: 4.5vh;
+    font-size: 2vw;
     font-weight: 500;
     color: white;
     border: 0px solid rgb(255, 255, 255);
     transition: all 0.5s;
-    border-bottom: 5px solid #b8b129;
 }
 
 .about-hover:hover
 {
-  transform: scale(1.2);
-  font-weight: 600;
-  cursor: default;
+    transform: scale(1.2);
+    color: #b8b129;
+    font-weight: 600;
+    cursor: default;
+}
+
+.about-panel {
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+hr {
+    border-color: black;
+}
+
+.panel-bg 
+{
+	background: linear-gradient(-65deg, #fff4bc, #3d3d3d, #272727, #1b1b1b);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+    50% {
+		background-position: 200% 200%;
+	}
+    100% {
+		background-position: 400% 400%;
+	}	
 }

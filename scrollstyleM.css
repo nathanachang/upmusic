@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+    #icon-list {
+        position: fixed;
+        top: 35vh;
+        left: 90vw;    
+        height: 200px;
+        z-index: 3;
+    }
+    
+    #team button {
+        width: auto;
+        left: 30vw;
+    }
+
+    #shop button {
+        width: auto;
+        left: 30vw;
+    }
+    
+    #jhin {
+        left: 37.5vw;
+    }
+}

@@ -5,6 +5,7 @@
         <title>UP Music</title>
         <link rel="shortcut icon" href="assets/logo.svg">
         <link rel="stylesheet" href="scrollstyle.css">
+        <link rel="stylesheet" href="scrollstyleM.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="homestyle.css">
@@ -52,14 +53,22 @@
          onclick="document.querySelector('.logo').classList.toggle('active');"></div>
         </div>
         <section id="home">
-            <video autoplay="" muted="" loop="">
-                <source src="assets/bg.mp4" type="video/mp4">
-            </video>
-            <div id="bg"></div> 
-            <img id="arrow" src="assets/arrow.gif">
+            <div id="bg"></div>
         </section>
         <section id="about">
-            <!-- <button>about</button> -->
+            <div class="about-panel">
+                <h3 class="about-hover" id="humble">HUMBLE</h3>
+                <p class="about-body hidden">"We focus on building upon those values as the <span style='color:white'><b>foundation</b></span>. No matter how talented you are, we believe if you don't have the <span style='color:white'><b>right values</b></span> and <span style='color:white'><b>character</b></span>, you will not be able to reach your full potential."</p>
+            </div>
+            <div class="about-panel">
+                <h3 class="about-heading"><span style='font-family: "Cloudsters"; color: #b8b129;'>UP Music</span> — is a place where people come to find their true potential.</h3>
+                <h3 class="about-hover" id="smart">SMART</h3>
+                <p class="about-body hidden">"They first come with a <span style='color:white'><b>limited mindset</b></span>, doubting themselves and their <span style='color:white'><b>skills</b></span>. We believe that with the right purpose and core values, your <span style='color:white'><b>potential is unlimited!</b></span>"</p>
+            </div>
+            <div class="about-panel">
+                <h3 class="about-hover" id="hungry">HUNGRY</h3>
+                <p class="about-body hidden">"We strive to be the <span style='color:white'><b>best version</b></span> of ourselves. Constantly <span style='color:white'><b>learning</b></span> and <span style='color:white'><b>improving</b></span> in search of achieving more than we thought possible."</p>
+            </div>
         </section>
         <section id="artists">
             <button id="jhin"><a href='jhin.html'>JHIN</a></button>
@@ -72,7 +81,10 @@
             </div>          
         </section>
         <section id="team">
-            <button> coming soon. </button>
+            <button id="team-button"><a href='team.html'>TEAM</a></button>
+            <div id="teambg">
+                <img src="assets/team.JPG" />
+            </div>
         </section>
         <section id="discography">
             <button id="discography-button"><a href='discography.html'>DISCOGRAPHY</a></button>

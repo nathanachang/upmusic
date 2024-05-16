@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UP Music</title>
+        <link rel="shortcut icon" href="assets/logo.svg">
+        <link rel="stylesheet" href="scrollstyle.css">        
+        <link rel="stylesheet" href="style.css">        
+        <link rel="stylesheet" href="teamstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        </script>
+    </head>
+    <body>                                            
+        <div class="topnav">
+            <div class="logo">
+                <div id="logo-grayout" class="grayout" onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+                <img id="logo-img" src="assets/logo.svg" /*onclick="this.classList.toggle('active');"*/>
+                <div class="container cut">
+                    <div class="drop cut2"></div>
+                  </div>
+                <div id="logo-list" class="list">
+                    <ul>
+                        <li id="list-home">
+                            HOME
+                        </li>
+                        <li id="list-about">
+                            ABOUT
+                        </li>
+                        <li id="list-artists">
+                            JHIN
+                        </li>
+                        <li id="list-team">
+                            TEAM
+                        </li>
+                        <li id="list-discography">
+                            DISCOGRAPHY
+                        </li>
+                        <li id="list-shop">
+                            SHOP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cursor" onclick="document.querySelector('.logo').classList.toggle('active');"></div>
+        </div>
+        <div class="page">
+            <div class="tabs">
+                <input id="220" type="radio" name="slider" checked>
+                <input id="wutan" type="radio" name="slider">
+                <input id="jango" type="radio" name="slider">
+                <input id="van" type="radio" name="slider">
+                <input id="buggy" type="radio" name="slider">
+                <input id="prion" type="radio" name="slider">
+                <input id="jasmine" type="radio" name="slider">
+            </div>
+            <div class="buttons">
+                <label for="220"></label>
+                <label for="wutan"></label>
+                <label for="jango"></label>
+                <label for="van"></label>
+                <label for="buggy"></label>
+                <label for="prion"></label>
+                <label for="jasmine"></label>
+            </div>
+            <div class="content">
+                <div class="profile 220">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/220.jpg">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1>220</h1>
+                                <h3><b>Executive Producer</b></h3>
+                                <h3><b>Music Producer</b></h3>
+                                <h3><b>A&amp;R Executive</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">                            
+                            <br>
+                            <h4>Joseph Park, better known by his alias '220', is a multi-platinum music producer and songwriter hailing from Toronto, Canada. He made his debut as a producer/songwriter in 2013 and has since continued to compose songs for some of the biggest K-pop and J-pop artists.</h4>
+                            <br>
+                            <h4>He has produced for a multitude of artists including NCT, EXO's D.O, XG, eaJ, Twice, Eric Nam, Super Junior, GOT7, 2PM, Red Velvet, Taemin, Kyuhyun, J Soul Brothers, Atsushi, U-KISS, Shinhwa, DAY6, and many others.</h4>
+                            <br>
+                            <h4>Currently, Joseph Park serves as the Executive Producer of the International Division and A&amp;R Executive at avex Music Creative, as well as the CEO of UP Music.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile wutan hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/wutan.png">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="wutan">WUTAN</h1>
+                                <h3><b>Rap Artist</b></h3>
+                                <h3><b>Songwriter</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">                            
+                            <br>
+                            <h4>Wutan is based in Seoul, South Korea and is one of the most sought after songwriters in the K-pop scene. He is an expert in coming up with catchy concepts and hooks. He has penned big hits recently, most notably "NCT U - Baggy Jeans", "NCT 127 - Fact Check", and "NCT DREAM - Yogurt Shake" that have sold over 8 million physical albums worldwide.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>WUTAN Discography</u></h3>
+                        <h4>2023 NCT 127 - Fact Check</h4>
+                        <h4>2023 NCT U - Baggy Jeans</h4>
+                        <h4>2023 NCT U - The Bat</h4>
+                        <h4>2023 NCT DREAM - Yogurt Shake</h4>
+                        <h4>2022 신화 WDJ - Come To Life EP</h4>
+                        <h4>2022 신화 WDJ - BamBiNun Digital Single</h4>
+                        <h4>2022 XG - Mascara</h4>
+                        <h4>2022 XG - Tippy Toes</h4>
+                        <h4>2020 NCT 127 - Kick It</h4>
+                        <h4>2020 Cravity - Blackout</h4>
+                        <h4>2020 Cravity - Break All The Rules</h4>
+                        <h4>2019 MUNCHEESE EP - You had to be there</h4>
+                        <h4>2017 VISTY BOYZ - VMC Compilation Album</h4>
+                        <h4>2017 Dope Boys Club - 2nd LP</h4>
+                        <h4>2015 Gibberish - Digital Single</h4>
+                        <h4>2014 HOL!DAY - WUTAN &amp; BUGGY EP</h4>
+                        <h4>2014 ZOORECA - 1st LP</h4>
+                        <h4>2013 RUN VMC - VISMAJOR Compilation Album</h4>
+                        <h4>2013 SMTM 2: Part 2 - Please Wait</h4>
+                        <h4>2013 My Name Is My Name</h4>
+                        <h4>2013 Take You There</h4>
+                    </div>
+                </div>
+                <div class="profile jango hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/jango.JPG">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="jango">jAngo</h1>
+                                <h3><b>Songwriter</b></h3>
+                                <h3><b>Vocal Producer</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">                            
+                            <br>
+                            <h4>jAngo is a singer/songwriter and producer born and raised in Bombay, India. He is an alumni at Berklee College of Music in Vocal Performance. He has worked with notable artists such as eaJ, MAX, Crush, DPR Live, Rich Brian, Seori, and many more as a writer and engineer. He is currently working with avex and UP Music to develop new artists for the future.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>jAngo Discography</u></h3>
+                        <h4>2023 JHIN - Blue Butterflies</h4>
+                        <h4>2023 JHIN - You Would</h4>
+                        <h4>2023 eaJ - Pacman</h4>
+                        <h4>2022 XG - Mascara</h4>
+                        <h4>2022 eaJ - Car Crash</h4>
+                        <h4>2021 BIG Naughty - STAB</h4>
+                        <h4>2020 DPR LIVE - Jam &amp; Butterfly</h4>
+                        <h4>2020 MAX - Working for the Weekend</h4>
+                        <h4>2020 Rich Brian - Love in My Pocket</h4>
+                        <br>
+                        <br>
+                        <h3><u>Upcoming Releases</u></h3>
+                        <h4>avex WARPS Project - 3 songs on Debut Album</h4>
+                    </div>
+                </div>
+                <div class="profile van hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/vanruther.png">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="van">Van Ruther</h1>
+                                <h3><b>Artist</b></h3>
+                                <h3><b>Producer</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">                            
+                            <br>
+                            <h4>Van Ruther is an artist and music producer who has produced for many Korean hip-hop and R&amp;B artists. He started his career as the main producer in a hip-hop label called Vismajor and is well respected within the Korean R&amp;B / Hip-hop scene. He's worked with big names such as Swings, Supreme Team, Geeks, and many more. Now he is focused on bringing his R&amp;B flavor to the K-pop scene and is currently working with a lot of K-pop artists.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>Van Ruther Discography</u></h3>
+                        <h4>2023 VMC - Vision</h4>
+                        <h4>2023 TK 정규 - Meaning</h4>
+                        <h4>2022 딥플로우x프롬올투휴먼 (Feat. TK)</h4>
+                        <h4>2022 왈로 - Back in my Block (Feat. 조광일)</h4>
+                        <h4>2022 왈로&amp;쿨에이드 - 무법</h4>
+                        <h4>2021 넉살&amp;이로한x아산나눔 재단CM송 - Don't Lose</h4>
+                        <h4>2021 TK정규 - Highway</h4>
+                        <h4>2021 AQUA WAVE with SEVENTEEN &amp; BTS</h4>
+                        <h4>2020 딥플로 우정규 4집 - Founder</h4>
+                        <h4>2018 Mnet '고등래퍼' 이예찬 - March</h4>
+                        <h4>2017 VMC - 티키타카</h4>
+                        <h4>2016 장혜진 - Ordinary EP</h4>
+                        <h4>2016 Mnet 언프리티 랩스타 나다 - Nasty (Feat. 박미경)</h4>                        
+                    </div>
+                </div>
+                <div class="profile buggy hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/buggy.webp">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="buggy">BUGGY</h1>
+                                <h3><b>Producer</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">                            
+                            <br>
+                            <h4>Buggy started his career in 2013 as a producer / DJ and has worked with many notable artists such as Nucksal, Xikers, JO1 and has also produced songs for the famous shows like Produce 101 and Show Me The Money. He also joined the Vismajor crew as a producer and has produced for many Korean Hip-hop artists. Buggy is well known for his hip-hop production and has several releases slated for 2024.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>BUGGY Discography</u></h3>
+                        <h4>2023 Kohway -  Switchin′ Lanes (Feat.JuvieTrain)</h4>
+                        <h4>2023 MOVEO the naked - Detox(feat. SkinnyBrown)</h4>
+                        <h4>2023 로스(Los), 딥플로우, Don Mills - Culture</h4>
+                        <h4>2022 염따 - 외로아 </h4>
+                        <h4>2022 LoxxPunkman(록스 펑크맨) - 새벽에</h4>
+                        <h4>2021 VMC - V CYPHER 2021</h4>
+                        <h4>2021 Rohann이로한 - Dumb Dumb</h4>
+                        <h4>2021 Rohann이로한 - Good Night</h4>
+                        <h4>2021 Rohann이로한: 꼴라 (CCOLA) - YOYO</h4>
+                        <h4>2021 Rohann이로한: 제이호 - Tsunami</h4>
+                        <h4>2021 Rohann이로한: 물소 - F.A.C.E ID (feat.Rohann)</h4>
+                        <h4>2021 Rohann이로한: MFMP - WALKIE TALKIE</h4>
+                        <h4>2021 Rohann이로한: 피식대학, Don Mills - 비공개다이어리</h4>
+                        <h4>2021 Don Mills던밀스 - MVP</h4>
+                        <h4>2021 Don Mills던밀스 - F.O.B. Interlude</h4>
+                        <h4>2021 Don Mills던밀스 - 다이나믹듀오(feat.넉살)</h4>
+                        <h4>2020 뱃사공 - 777</h4>
+                        <h4>2020 뱃사공 - GET HIGH &amp; LOW</h4>
+                        <h4>2020 뱃사공 - 한번인생 2 Live</h4>
+                        <h4>2020 QM - 36.5 (feat.화지)</h4>
+                        <h4>2020 QM - 만남조건 (feat.jerd)</h4>
+                        <h4>2020 QM - Chantey Interlude</h4>
+                        <h4>2020 QM - 닻(feat.Khundi Panda)</h4>
+                        <h4>2020 Rohann이로한 - OYE (feat. Don Mills)</h4>
+                        <h4>2020 Rohann이로한 - LOVE, LIFE</h4>
+                    </div>
+                </div>
+                <div class="profile prion hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/prion.jpg">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="prion">PRION HEART</h1>
+                                <h3><b>Producer</b></h3>
+                                <h3><b>DJ</b></h3>
+                                <h3><b>Audio Engineer</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">
+                            <br>
+                            <h4>Prion Heart started his career as a band leader in a heavy metal band in high school. From this time, he delved into sound engineering and music production. At the same time he got the opportunity to work in a club where he was exposed to EDM where he found his passion to go deeper into EDM. Prion is currently a DJ and his work has been praised by Diplo, Showtek, and Don Diablo. He has worked with HEXAGON to release original mixes and has ranked #1 on Beatport several times. Prion is using his cutting edge sounds to produce K-pop / J-pop artists, already securing cuts on an upcoming artist.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>PRION HEART Discography</u></h3>
+                        <h4>PRION HEART - Detail</h4>
+                        <h4>PRION HEART - Drip (Original Mix)</h4>
+                        <h4>PRION HEART - Loco Loco (Original Mix)</h4>
+                        <h4>PRION HEART - Say It Now (Original Mix)</h4>
+                        <h4>PRION HEART - Over You (Original Mix)</h4>
+                        <h4>PRION HEART - You Know (Original Mix)</h4>
+                        <h4>PRION HEART, Bashment YC - Go Back (Original Mix)</h4>
+                        <h4>Pilament - Kill EP</h4>
+                        <h4>PRION HEART - Count This Money (Original Mix)</h4>
+                        <h4>PRION HEART - Musik EP</h4>
+                        <h4>PRION HEART - Back To You (Original Mix)</h4>
+                        <h4>Jo Gwang Il - Grow Back (Prod.Pilament)</h4>
+                        <h4>Jo Gwang Il - If I ain‘t rap</h4>
+                        <h4>Brown Tigger  Busta Bomb (ft.Skull, Koonta)</h4>
+                        <h4>Equus Recordings Compilation EP ’SCION’</h4>
+                        <h4>PRION HEART - Rebirth (Original Mix)</h4>
+                        <h4>PRION HEART & SENTIMAN - Tear It Down (Extended Mix)</h4>
+                        <h4>Dippin’ Carls & Jinjo Crew Song</h4>
+                        <h4>BBIC WORLD FINAL 2020 Title Song (뛰어놀아)  (Feat.Jo Gwang Il & Brown Tigger)</h4>
+                    </div>
+                </div>
+                <div class="profile jasmine hide">
+                    <div class="left center">
+                        <div class="top center">
+                            <div class="left center">
+                                <img src="assets/profiles/jasmine.jpg">
+                            </div>                            
+                            <div class="right" style="margin-left: -4vw;">
+                                <h1 id="jasmine">JASMINE</h1>
+                                <h3><b>Singer</b></h3>
+                                <h3><b>Songwriter</b></h3>
+                            </div>
+                        </div>
+                        <h3><u>Biography</u></h3>
+                        <div class="bio">
+                            <br>
+                            <h4>JASMINE is a songwriter and artist based in South Korea, who desires to have her songs serve as the backdrop to significant moments in people's lives, akin to a scene in a movie. Her inspiration for songwriting primarily stems from shows and films, finding herself continually listening to media soundtracks until they become intertwined with her own existence. Through learning the art of soundtracks combined with her experience in the K-pop industry, she works to infuse life and movement into her music.</h4>
+                            <br>
+                            <h4>Graduating from Berklee College of Music in Song Writing, Jasmine's exposure to Jaxx and R&amp;B emboldens and inspires the songs she writes. Currently, her works are featured in projects with Paramount and has in-house experience at Allart Entertainment toplining and training the K-pop girl group PIXY's albums, as well as collborating with various independent musicians.</h4>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3><u>JASMINE Discography</u></h3>
+                        <h4>PIXY 3rd Mini Album "REBORN"</h4>
+                        <h4>PIXY - Villain</h4>
+                        <h4>PIXY - 안부 (How Are You)</h4>
+                        <h4>PIXY Bewitched (English Version) adaptation</h4>
+                        <h4>PIXY 4th Album "CHOSEN KARMA"</h4>
+                        <h4>PIXY Digital Album "The Voice"</h4>
+                        <h4>PIXY - Truth or Dare (English and Korean Versions)</h4>
+                        <h4>Kpop Project Code V0047 - Vocal Tracks 4 songs</h4>
+                        <h4>Kpop Project Code V0055 - Vocal Tracks 7 songs</h4>
+                        <h4>Geunsol Jung, JASMINE - Moonflower</h4>
+                        <h4>Pepsi Knob9 - Anti-Origin</h4>
+                        <h4>WonHyoYeon, 정아 - Little Dreams (with 정아)</h4>
+                        <h4>VORANNAH, JASMINE - Devil Eyes</h4>
+                        <h4>JASMINE - MY RIDE</h4>
+                        <h4>KEENEAT - Behind Color (ft. JASMINE</h4>
+                        <h4>FeelB, JASMINE - Special (feat. JASMINE)</h4>
+                    </div>
+                </div>
+                </div>
+            </div>        
+        <h4 id="contact"><a href="mailto:management@upmusic.net">Contact: management@upmusic.net</a></h4>
+        <hr id="team-bottom">
+        
+        <script src='team.js'></script>
+        <script src='menu.js'></script>
+    </body>        
+</html>
